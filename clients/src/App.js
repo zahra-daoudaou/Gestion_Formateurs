@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import Formateurs from './components/allFormateur';
+import MoreData from './components/moreData';
+import Home from './components/home';
+import Add from './components/add';
 import './App.css';
-import Formateurs from './allFormateur';
-import MoreData from './moreData';
-import Home from './home';
-import Add from './add';
 
 function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="navbar">
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/formateurs">Formateurs</NavLink>
+        <NavLink to="/formateurs">Teachers</NavLink>
         <NavLink to="/Add">Add</NavLink>
       </div>
       <Routes>
@@ -25,8 +25,3 @@ function App() {
 }
 
 export default App;
-
-
-//import MoreData from './moreData';
-//<NavLink to="/formateurs/:formateurId">Formateur</NavLink>
-//<Route path="/formateurs/:formateurId" element={<MoreData />} />

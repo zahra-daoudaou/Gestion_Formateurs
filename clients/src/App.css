@@ -1,38 +1,20 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar {
+    background-color: #333; /* Set background color */
+    overflow: hidden; /* Ensure the navbar content doesn't overflow */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .navbar a {
+    float: left; /* Float the links to the left */
+    display: block; /* Make the links block elements */
+    color: white; /* Set text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add padding */
+    text-decoration: none; /* Remove underline from links */
   }
-  to {
-    transform: rotate(360deg);
+  
+  .navbar a:hover {
+    background-color: #ddd; /* Change background color on hover */
+    color: black; /* Change text color on hover */
   }
-}
+  
+  
